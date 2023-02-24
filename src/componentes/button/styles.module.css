@@ -1,0 +1,13 @@
+.button {
+  background-color: #333;
+  color: #fff;
+  width: 200px;
+  height: 45px;
+}
+
+.buttonGrande {
+  background-color: red;
+  color: #fff;
+  width: 600px;
+  height: 145px;
+}

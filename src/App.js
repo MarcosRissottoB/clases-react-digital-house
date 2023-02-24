@@ -1,70 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
-
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import { Button } from './componentes/button'
 
-// export default function MyApp() {
-//   return (
-//     <div>
-//       <Button variant="contained">Hello World</Button>
-//     </div>
-//   );
-// }
-// const {nombre, edad, apellido} = persona;
-
-const Encabezado = ({titulo, subtitulo}) => {
-  <>
-    <h1>{titulo}</h1>
-    <h2>{subtitulo}</h2>
-  </>
-}
-
-// const ButtonCustom = (props.text) => {
-//   <button>
-//     {props.text}
-//   </button>
-// }
-
-const ButtonCustom = ({text}) => {
-  <button>
-    {text}
-  </button>
-}
-
-const ButtonCustomConChildren = ({children}) => {
-  <button>
-    {children}
-  </button>
-}
-// props = {}
-// text
-
-// const ButtonMUI = ({variant}) => <Button variant={variant}>Text</Button>
 function App() {
-  const estadoWeb = {
-    text:"nuestro super button",
-    textChildren:"nuestro super button"
-  }
+const personas = [
+  {id: 1, nombre: 'matias'},
+  {id: 2, nombre: 'Javier'},
+  {id: 3,nombre: 'Ricardo'},
+  {id: 4, nombre: 'Marcos'}
+]
+
+const filtroPorNombre = (personas) => {
+   let nombre = personas.filter(persona => persona.nombre ===  'Javier')[0].nombre
+   console.log("nombre", nombre);
+   return nombre
+}
+
   return (
     <div className="App">
-
-      <ButtonCustom text={estadoWeb.text} />
-
-      <ButtonCustomConChildren>
-        {estadoWeb.textChildren}
-      </ButtonCustomConChildren>
-
-      {/* <Encabezado titulo="Hola chicos" subtitulo="Practicaron el fin de semana?"/>
+      <h1>Practicas con CSS</h1>
+      <Button >Login</Button>
+     
+      <h2>array.filter</h2>
+      <div><span>Valor retornado: <strong>{filtroPorNombre(personas)}</strong></span></div>
+      <br />
+      <br />
+      <span>Devuelve un nuevo array... y hay que iterarlo,
+         para evitarlo en la funcion use [0].nombre, para retornar el nombre del primer elemento</span>
       
-
-      <ButtonMUI variant="contained">Hello World</ButtonMUI>
-      <ButtonMUI variant="contained">Text</ButtonMUI>
-
-      <Button variant="contained">Contained</Button>
-      <Button variant="outlined">Outlined</Button> */}
+      <h2>array.map</h2>
+      {personas.map((persona) => 
+        <ul key={persona.id}>
+          <li><span>{persona.nombre}</span></li>
+        </ul>
+      )}
+      <br />
+      <span>Devuelve un elemento por cada elemento del array original</span>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
