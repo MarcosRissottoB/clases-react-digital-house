@@ -6,7 +6,9 @@ export const FormularioBasico = () => {
   const [tema, setTema] = useState("");
   
   const handleSubmit = (e) => {
+    
     e.preventDefault();
+
     console.log("Nombre: ", nombre);
     console.log("Dia: ", dia);
     console.log("Tema: ", tema);

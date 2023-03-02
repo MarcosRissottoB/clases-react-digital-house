@@ -3,12 +3,14 @@ import React from 'react'
 
 export const Eventos = () => {
 
+  // Parte 1-a
   // const handleEventoSintetico = (e) => {
   //   console.log("handleEventoSintetico");
   //   // console.log("Target: ", e);
   //   console.log(e.nativeEvent);
   // };
 
+  // Parte 1-b
   // const handleClickAutomatico = () => {
   //   console.log("handleClickAutomatico");
   // };
@@ -23,9 +25,6 @@ export const Eventos = () => {
   const handleChange = (e) => {
     console.log("handleChange target: ", e.target);
     console.log("handleChange: value", e.target.value);
-
-
-
     // if (e.target.value.length > 3) {
     //   console.log("handleChange con 4 o mas letras: ", e.target.value);
     // }
@@ -45,12 +44,14 @@ export const Eventos = () => {
          {/* addEventListener("mouseover", (event) => {});
           onmouseover = (event) => {}; */}
         
+         {/* Parte 1-a */}
         {/* Eventos Sinteticos con React */}
         {/* <h2>Eventos Sinteticos</h2> 
        <button onClick={handleEventoSintetico}>
           Evento sintetico
         </button> */}
 
+        {/* Parte 1-b */}
         {/* Los parentesis, 
           hace que se ejecute automaticamente en este caso...
          OJO!! */}
@@ -68,10 +69,10 @@ export const Eventos = () => {
    */}
         {/* Parte 3 */}
         {/* Evento onChange para inputs */}
-        <h2>Evento onChange para inputs</h2>
-        <input name="firstName" onChange={handleChange} /> 
+        {/* <h2>Evento onChange para inputs</h2>
+        <input name="firstName" onChange={handleChange} />  */}
 
-
+        {/* Parte 4: ver en /componentes/formularios */}
         {/* Otro tema: Formularios */}
         {/* Componentes controlados vs no controlados */}
         {/* Los no controlados por React, estan controlados por el DOM */}
