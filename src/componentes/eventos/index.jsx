@@ -22,13 +22,13 @@ export const Eventos = () => {
 
   // Parte 3
   // onChange evento para los inputs con el teclado
-  const handleChange = (e) => {
-    console.log("handleChange target: ", e.target);
-    console.log("handleChange: value", e.target.value);
-    // if (e.target.value.length > 3) {
-    //   console.log("handleChange con 4 o mas letras: ", e.target.value);
-    // }
-  }
+  // const handleChange = (e) => {
+  //   console.log("handleChange target: ", e.target);
+  //   console.log("handleChange: value", e.target.value);
+  //   // if (e.target.value.length > 3) {
+  //   //   console.log("handleChange con 4 o mas letras: ", e.target.value);
+  //   // }
+  // }
   return (
     <div>
       <h1>Tema Eventos</h1>
