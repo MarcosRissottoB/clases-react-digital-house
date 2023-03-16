@@ -28,6 +28,9 @@ export const Eventos = () => {
   //   // if (e.target.value.length > 3) {
   //   //   console.log("handleChange con 4 o mas letras: ", e.target.value);
   //   // }
+
+
+
   // }
   return (
     <div>

@@ -20,15 +20,14 @@ export const FormularioBasico = ({submitData}) => {
     console.log("Dia: ", dia);
     console.log("Tema: ", tema);
     alert("El formulario se ha enviado");
-    
     // validaciones
 
     submitData(
       {
-      nombre,
-      dia,
-      tema
-    }
+        nombre,
+        dia,
+        tema
+      }
     )
 
   };
