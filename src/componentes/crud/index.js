@@ -96,6 +96,16 @@ export const Crud = () => {
     } 
   }
 
+  const updatePost = async (id, body) => {    
+    try {
+      const response = await axios.delete(
+        `${BASE_URL}${ENDPOINT_POSTS}/${id}`, body);
+      console.log("response", response);
+      getPosts()
+    } catch(error) {
+      console.log("error", error);
+    } 
+  }
 
   const handleOnSubmit = async (formData) => {
     createPost(formData)

@@ -10,6 +10,18 @@
   justify-content: space-around;
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* .nav-item {
+  text-decoration: none;
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

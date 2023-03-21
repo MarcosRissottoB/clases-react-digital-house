@@ -1,24 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
-// import { Items } from './componentes/cicloDeVidaDeLosComponentes';
-// import { User } from './componentes/peticionesAsicronas';
-import { Crud } from './componentes/crud';
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
-  // const [id, setId] = useState(1);
-
-  // const handleClick = () => {
-  //   console.log("setId", id);
-  //   setId(id + 1)
-  // }
-
   return (
     <div className="App">
-      <h1>Peticiones asincronas</h1>
       <div className="App-container">
-        {/* <User userId={id}/>
-        <button onClick={() => handleClick()}>Cambiar ID</button> */}
-        <Crud />
+      <nav className="nav" >
+        <ul>
+          <li>
+        <   Link to="/home">Home</Link>
+          </li>
+          <li>
+            
+            {/* <a href="/posts">Posts</a> */}
+            <Link to="/posts">Posts con Link</Link>
+          </li>
+          <li>
+            {/* <a href="/posts/1234">Post</a> */}
+            <Link to="/posts/12">Post con Link</Link>
+          </li>
+        </ul>
+      </nav>
+        <span>React router</span>
+        <Outlet />
       </div>
     </div>
   );
