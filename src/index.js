@@ -10,7 +10,7 @@ import './index.css';
 import App from './App';
 
 // Pages
-import { Home } from './pages/Home'
+import { Home } from './pages/home/Home'
 import { Posts } from './pages/Posts'
 import { Post } from './pages/Post'
 import { Error } from './pages/Error'
@@ -42,7 +42,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    {/* <App />  */} 
   </React.StrictMode>
 );
 
