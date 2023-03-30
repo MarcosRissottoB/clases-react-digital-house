@@ -4,7 +4,6 @@ import { Link, Outlet } from "react-router-dom";
 import { UserContext } from './context/userContext'
 
 function App() {
-
   const [user, setState] = useState({
     name: 'John',
     lastname: 'Smith',
@@ -23,11 +22,14 @@ function App() {
             <li>
               
               {/* <a href="/posts">Posts</a> */}
-              <Link to="/posts">Posts con Link</Link>
+              <Link to="/posts">Posts </Link>
             </li>
             <li>
               {/* <a href="/posts/1234">Post</a> */}
-              <Link to="/posts/12">Post con Link</Link>
+              <Link to="/posts/12">Post </Link>
+            </li>
+            <li>
+              <Link to="/todo">Todo</Link>
             </li>
           </ul>
         </nav>

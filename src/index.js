@@ -14,6 +14,7 @@ import { Home } from './pages/home/Home'
 import { Posts } from './pages/Posts'
 import { Post } from './pages/Post'
 import { Error } from './pages/Error'
+import { Todo } from './pages/Todo'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/posts/:id",
         element: <Post />,
+      },
+      {
+        path: "/todo",
+        element: <Todo />,
       },
     ]
   },
